@@ -26,7 +26,9 @@ par(mfrow=c(2,2))
      ylab = "Global Active Power")
   #second plot
   plot(data$DateTime, data$Voltage,
-       type="l")
+       type="l",
+       xlab="datetime",
+       ylab="Voltage")
   #third plot
   plot(data$DateTime, data$Sub_metering_1,
        type="l",
@@ -40,7 +42,9 @@ par(mfrow=c(2,2))
          col = c("black", "red", "blue"))
   #fourth plot
   plot(data$DateTime, data$Global_reactive_power, 
-       type = 'l')
+       type = 'l',
+       xlab="datetime",
+       ylab="Global_reactive_power")
 
 #close png file
 dev.off()
